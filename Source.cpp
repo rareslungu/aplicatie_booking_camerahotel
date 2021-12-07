@@ -161,11 +161,6 @@ public:
 
     void alegere_camera(class client client) {
 
-        /*for (int i = 0; i < camere.size(); i++) {
-            if (status_ocupat[i] == 0)
-                std::cout << camere[i].getNrCamera() << " " << camere[i].getTipCamera() << " " << camere[i].getCapacitatePersoane() << " capacitate" << camere[i].getTipCamera() << "\n";
-        }*/
-
         std::cout << "\nAlege tipul camerei pe care doresti s-o inchiriezi: 1.DUBLA / 2.APARTAMENT / 3.VIEW ROOM\n";
 
         int tipCam;
