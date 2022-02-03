@@ -4,12 +4,13 @@
 
 #ifndef TEMA_APPLICATION_H
 #define TEMA_APPLICATION_H
-
+#include <string.h>
 //
 //class application {
 //private:
 //    application() = default;
 //    static application* app;
+
 //public:
 //    application(const application&) = delete;
 //    application& operator=(const application&) = delete;

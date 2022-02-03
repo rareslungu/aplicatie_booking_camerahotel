@@ -3,6 +3,8 @@
 //
 
 #include "clientHotelNationalitate.h"
+#include <string.h>
+#include "eroriClient.h"
 
 
 void clientHotelNationalitate::afisare(std::ostream &out) const {
@@ -20,7 +22,11 @@ clientHotelNationalitate::clientHotelNationalitate(const std::string &nume, cons
                                                                                                                   id,
                                                                                                                   tipCamera),
                                                                                                       nationalitate(
-                                                                                                              nationalitate) {}
+                                                                                                              nationalitate) {
+    if(id < -237467){
+        throw eroare();
+    }
+}
 
 
 

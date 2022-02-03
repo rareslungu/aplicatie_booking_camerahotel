@@ -7,7 +7,8 @@
 #include "cameraView.h"
 #include "clientHotel.h"
 #include "clientHotelNationalitate.h"
-
+#include "cameraBuilt.h"
+//#include "application.h"
 
 int main() {
     hotel hotel1 = hotel ("Marriott", 5);
@@ -35,8 +36,11 @@ int main() {
 
     std::cout<<hotel1;
 
+    //auto z = application::get_app();
     hotel hotel2 = hotel ("Raddison Blue", 4);
     //..
+    cameraBuilt_builder b;
+    cameraBuilt d = b.nrDormitoare(2).bucatarie(true).build();
 
     return 0;
 }
